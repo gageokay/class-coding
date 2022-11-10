@@ -1,0 +1,104 @@
+    /*div title with right align*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+
+
+/* mobile view + standard */
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background: rgb(198, 205, 255);
+    padding: 10px;
+    border: 1px solid black;
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+p {
+    margin-top: 50px;
+}
+
+#section-one > h2 {
+    background: #ff0000;
+}
+
+#section-two > h2 {
+    background: yellow;
+}
+
+#section-three > h2 {
+    background: rgb(0, 255, 208);
+}
+
+
+
+/* media querie between 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #section-one {
+        width: 45%;
+        float:left;
+        margin-left: 4%;
+    }
+
+    #section-two {
+        width: 45%;
+        float: right;
+        margin-right: 4%;
+        margin-bottom: 16px;
+    }
+
+    #section-three {
+        width: 92%;
+        clear: both;
+        margin: 4%;
+    }
+}
+
+
+
+/* media querie above 992px */
+@media (min-width: 992px) {
+
+    section {
+        margin: 0 auto;
+    }
+    #section-one {
+        width: 30%;
+        float: left;
+        margin-left: 4%;
+    }
+
+    #section-two {
+        width: 30%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    #section-three {
+        width: 30%;
+        float: left;
+        margin-right: 4%;
+    }
+}
